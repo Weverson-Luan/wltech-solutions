@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar styles */
+.scrollbar {
+  scrollbar-width: thin; /* Barra fina (Firefox) */
+  scrollbar-color: #4f46e5 #f3f4f6; /* Cor da barra e fundo (Firefox) */
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+  height: 8px; /* Altura da barra de rolagem */
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #4f46e5; /* Cor do polegar */
+  border-radius: 4px; /* Borda arredondada */
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background-color: #f3f4f6; /* Cor do fundo da barra */
+}
