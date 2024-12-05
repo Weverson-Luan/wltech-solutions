@@ -1,28 +1,28 @@
 const HomeSection: React.FC = () => {
-  const parceiros = [
-    "https://via.placeholder.com/150?text=Parceiro+1",
-    "https://via.placeholder.com/150?text=Parceiro+2",
-    "https://via.placeholder.com/150?text=Parceiro+3",
-    "https://via.placeholder.com/150?text=Parceiro+4",
-    "https://via.placeholder.com/150?text=Parceiro+5",
-  ];
+  // const parceiros = [
+  //   "https://via.placeholder.com/150?text=Parceiro+1",
+  //   "https://via.placeholder.com/150?text=Parceiro+2",
+  //   "https://via.placeholder.com/150?text=Parceiro+3",
+  //   "https://via.placeholder.com/150?text=Parceiro+4",
+  //   "https://via.placeholder.com/150?text=Parceiro+5",
+  // ];
 
   return (
     <div className="text-start">
       <h1 className="text-4xl font-bold mb-4">Soluções em Tecnologia</h1>
       <p className="text-xl mb-8 text-gray-500">
-        Na WLTECH SOLUTIONS, acreditamos no poder da tecnologia como alicerce
-        para transformar desafios em oportunidades reais de crescimento. Com
-        nossa expertise em desenvolvimento de software, estratégias digitais e
-        suporte técnico especializado, ajudamos empresas a alcançar novos
-        patamares de inovação e eficiência. Nosso compromisso vai além de
-        entregar soluções. Trabalhamos lado a lado com nossos clientes para
-        compreender suas necessidades, personalizar estratégias e implementar
-        tecnologias que não apenas atendam às demandas atuais, mas também
-        impulsionem o futuro de seus negócios. Seja otimizando processos,
-        conectando pessoas ou criando experiências digitais únicas,
-        transformamos ideias em resultados e oportunidades em vantagens
-        competitivas. Na WLTECH, sua visão se torna realidade tecnológica.
+        Na EW TECH, acreditamos no poder da tecnologia como alicerce para
+        transformar desafios em oportunidades reais de crescimento. Com nossa
+        expertise em desenvolvimento de software, estratégias digitais e suporte
+        técnico especializado, ajudamos empresas a alcançar novos patamares de
+        inovação e eficiência. Nosso compromisso vai além de entregar soluções.
+        Trabalhamos lado a lado com nossos clientes para compreender suas
+        necessidades, personalizar estratégias e implementar tecnologias que não
+        apenas atendam às demandas atuais, mas também impulsionem o futuro de
+        seus negócios. Seja otimizando processos, conectando pessoas ou criando
+        experiências digitais únicas, transformamos ideias em resultados e
+        oportunidades em vantagens competitivas. Na EW TECH, sua visão se torna
+        realidade tecnológica.
       </p>
 
       {/* Banner Section */}
@@ -88,15 +88,18 @@ const HomeSection: React.FC = () => {
               description: "Manutenção contínua e suporte técnico.",
             },
           ].map((item, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-4">{item.title}</h3>
+            <div
+              key={index}
+              className="bg-white p-6 rounded-lg text-center shadow-md"
+            >
+              <h3 className="lg:text-xl font-semibold mb-4">{item.title}</h3>
               <p>{item.description}</p>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="text-center">
+      {/* <section className="text-center">
         <h2 className="text-3xl font-bold mb-6">Nossos Parceiros</h2>
         <div className="justify-center grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {parceiros.map((img, index) => (
@@ -112,7 +115,7 @@ const HomeSection: React.FC = () => {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

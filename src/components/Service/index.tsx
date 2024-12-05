@@ -19,23 +19,24 @@ const Services: React.FC = () => {
     },
   ];
 
+  const assets: string = "./src/assets/";
   const projetos = [
     {
       title: "Sistema de Gestão Empresarial",
       description: "Desenvolvimento de ERP para empresa de médio porte",
-      imagem: "https://placehold.co/300x400/EEE/31343C",
+      imagem: assets + "crm.webp",
       tecnologias: ["React", "Node.js", "PostgreSQL"],
     },
     {
       title: "Aplicativo de Delivery",
       description: "Solução completa para restaurantes e clientes",
-      imagem: "https://placehold.co/300x400/EEE/31343C",
+      imagem: assets + "delivery.webp",
       tecnologias: ["React Native", "Firebase", "GraphQL"],
     },
     {
       title: "Dashboard de Analytics",
       description: "Painel de monitoramento de métricas em tempo real",
-      imagem: "https://placehold.co/300x400/EEE/31343C",
+      imagem: assets + "analytics.webp",
       tecnologias: ["Next.js", "TypeScript", "Chart.js"],
     },
   ];
